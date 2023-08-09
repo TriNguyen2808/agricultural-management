@@ -6,9 +6,13 @@
         <meta name="keywords" content="nông sản, quản lí nguồn gốc nông sản">
         <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="assets/css/index.css">
+        <script src="assets/js/index.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     </head>
+
     <body>
        <header class="flex">
             <div class="menu-button">
@@ -28,7 +32,9 @@
             <div class="search-space">
                 <form action="/search" method="get" class="search-form">
                     <input type="text" name="search" placeholder="Tìm kiếm" class="search-input">
-                    <button type="submit" class="search-button">Tìm kiếm</button>
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                   </form>                  
             </div>
        </header>
@@ -43,70 +49,205 @@
         <div class="veg box">
             <div class="veg-title">Nông nghiệp</div>
             <div class="veg content">
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
-            </div>  
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/piece-golden-rice-rice-waiting-be-harvested.jpg" alt="Lúa">
+                            </div>
+                            <div class="box-content">Lúa gạo</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/piece-golden-rice-rice-waiting-be-harvested.jpg" alt="Lúa">
+                            </div>
+                            <div class="box-content">Lúa gạo</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/piece-golden-rice-rice-waiting-be-harvested.jpg" alt="Lúa">
+                            </div>
+                            <div class="box-content">Lúa gạo</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/ears-wheat-close-up-field-concept-farming-nature.jpg" alt="Lúa mì">
+                            </div>
+                            <div class="box-content">Lúa mì</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="Ngô">
+                            </div>
+                            <div class="box-content">Ngô</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/nông nghiệp/green-tea-bud-leaves-green-tea-plantations-morning.jpg" alt="Trà">
+                            </div>
+                            <div class="box-content">Trà</div>                           
+                        </a>
+                    </div>
+                </div>
+                <button class="scroll-button left">←</button>
+                <button class="scroll-button right">→</button>    
+            </div> 
         </div>
         <div class="veg box">
             <div class="veg-title">Lâm nghiệp</div>
             <div class="veg content">
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/lâm nghiệp/green-bamboo-forest-daylight.jpg" alt="Tre">
+                            </div>
+                            <div class="box-content">Tre</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/lâm nghiệp/stack-lot-chopped-firewood-ready-cold-winter.jpg" alt="Gỗ">
+                            </div>
+                            <div class="box-content">Gỗ</div>                           
+                        </a>
+                    </div>
+                </div>
             </div>  
         </div>
         <div class="veg box">
             <div class="veg-title">Thủy sản</div>
             <div class="veg content">
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/thủy sản/cá đuối.jpg" alt="Cá đuối">
+                            </div>
+                            <div class="box-content">Cá đuối</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/thủy sản/fresh-oyster.jpg" alt="Hàu">
+                            </div>
+                            <div class="box-content">Hàu</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/thủy sản/mackerel-market.jpg" alt="Cá cơm">
+                            </div>
+                            <div class="box-content">Cá cơm</div>                           
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/thủy sản/top-view-delicious-seafood-arrangement.jpg" alt="Cá mè">
+                            </div>
+                            <div class="box-content">Cá mè</div>                           
+                        </a>
+                    </div>
+                </div>
             </div>  
         </div>
         <div class="veg box">
             <div class="veg-title">Diêm nghiệp</div>
             <div class="veg content">
-                <a href="#">
-                    <figure>
-                        <img src="assets/images/logo.jpg" alt="NongSan">
-                        <figcaption>Mô tả ảnh</figcaption>
-                    </figure>
-                </a>
+                <div class="col">
+                    <div class="col-inner">
+                        <a href="#">
+                            <div class="box-image">
+                                <img src="assets/images/diêm nghiệp/salt-salt-farm-ready-harvest-thailand.jpg" alt="Muối">
+                            </div>
+                            <div class="box-content">Muối</div>                           
+                        </a>
+                    </div>
+                </div>
             </div>  
         </div>
        </section>
        <section class="news box">
             <div class="news-title">TIN TỨC</div>
             <div class="news content">
-                <a href="#">
+                <div class="post-item">
+                        <a target="_blank" href="https://startup.vnexpress.net/tin-tuc/y-tuong-moi/ung-dung-blockchain-de-minh-bach-thong-tin-cho-nong-san-viet-3824716.html">
+                            <div class="post-image" >
+                                <img src="https://i1-startup.vnecdn.net/2018/10/22/2-Image-4-9383-1540204346.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=FVb9NSR6PBk82IgL7VbUOg" alt="tin tuc" />
+                            </div>
+                            <div class="post-content">
+                                <h4>Ứng dụng Blockchain để minh bạch thông tin cho nông sản Việt</h4>
+                                <p>Giải pháp Blockchain trong truy xuất nguồn gốc được cho là bước tiến để nông sản trong nước tham gia mạnh hơn vào chuỗi sản xuất, cung ứng toàn cầu.</p>
+                            </div>
+                        </a>
+                </div>
+                <div class="post-item">
+                        <a target="_blank" href="https://lmhtx.phutho.gov.vn/Chuyen-muc-tin/Chi-tiet-tin/t/go-nut-that-trong-truy-xuat-nguon-goc-nong-san-cua-htx/title/37179/ctitle/540288?AspxAutoDetectCookieSupport=1">
+                            <div class="post-image" >
+                                <img src="https://i.vnbusiness.vn/2023/02/11/-9482-1676079380_1200x0.jpg" alt="tin tuc" />
+                            </div>
+                            <div class="post-content">
+                                <h4>Gỡ nút thắt trong truy xuất nguồn gốc nông sản của HTX</h4>
+                                <p>Muốn truy xuất nguồn gốc nông sản của người dân, HTX, việc quét mã QR được coi là phương pháp phổ biến hiện nay. Tuy nhiên...</p>
+                            </div>
+                        </a>
+                </div>
+                <div class="post-item">
+                        <a target="_blank" href="https://vnexpress.net/chuyen-gia-phat-hien-dieu-la-ve-nguon-goc-nong-san-trong-sieu-thi-4381487.html">
+                            <div class="post-image">
+                                <img src="https://i1-vnexpress.vnecdn.net/2021/11/04/anh-doan-9168-1636021981-16360-1144-7686-1636033326.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=7QsT4sOTQQjKysGF6FHhnw" alt="tin tuc"/>
+                            </div>
+                            <div class="post-content">
+                                <h4>Chuyên gia phát hiện 'điều lạ' về nguồn gốc nông sản trong siêu thị</h4>
+                                <p>Quét mã nguồn gốc nông sản trong một siêu thị lớn, chuyên gia mã vạch bất ngờ thấy thông tin ngày cách ly phân bón và thuốc trừ sâu giống nhau.</p>
+                            </div>
+                        </a>
+                </div>
+                <div class="post-item">
+                        <a target="_blank" href="https://namdinh.gov.vn/portal/Pages/2020-11-26/Truy-xuat-nguon-goc-nong-san-Doanh-nghiep-nguoi-tiiiguwu.aspx">
+                            <div class="post-image" >
+                                <img src="http://media.vietq.vn/files/HanHien/2020/11/23/truy-xuat-nguon-goc-nong-san-doanh-nghiep-nguoi-tieu-dung-cung-huong-loi.jpg" alt="tin tuc" />
+                            </div>
+                            <div class="post-content">
+                                <h4>Truy xuất nguồn gốc nông sản: Doanh nghiệp, người tiêu dùng cùng hưởng lợi</h4>
+                                <p>Việc thực hiện phát triển hệ thống truy xuất nguồn gốc nông sản thời gian qua đã giúp doanh nghiệp và người tiêu dùng cùng ngăn chặn thực phẩm không rõ nguồn gốc, xuất xứ bán trên thị trường.</p>
+                            </div>
+                        </a>
+                </div>
+            </div>
+                <!-- <a href="#">
                     <figure>
                         <img src="assets/images/logo.jpg" alt="">
                         <figcaption>Mo ta anh</figcaption>
@@ -123,24 +264,31 @@
                         <img src="assets/images/logo.jpg" alt="">
                         <figcaption>Mo ta anh</figcaption>
                     </figure>
-                </a>
+                </a> -->
             </div>
        </section>
-       <footer>
-            <div class="inf">
-                <figure class="inf">
-                    <img src="#" alt="icon">
-                    <figcaption>acsac</figcaption>
-                </figure>
-                <figure class="inf">
-                    <img src="#" alt="icon">
-                    <figcaption>acsac</figcaption>
-                </figure>
-                <figure class="inf">
-                    <img src="#" alt="icon">
-                    <figcaption>acsac</figcaption>
-                </figure>
-            </div>
-       </footer>
     </body>
+
+    <footer>
+        <div class="inf">
+            <figure class="inf">
+                <img src="#" alt="icon">
+                <figcaption>acsac</figcaption>
+            </figure>
+            <figure class="inf">
+                <img src="#" alt="icon">
+                <figcaption>acsac</figcaption>
+            </figure>
+            <figure class="inf">
+                <img src="#" alt="icon">
+                <figcaption>acsac</figcaption>
+            </figure>
+        </div>
+       <div class="backtop flex">
+            <i class="fa-solid fa-angle-up"></i>
+       </div>
+    </footer>
+   
+
+
 </html>
