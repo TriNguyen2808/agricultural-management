@@ -1,0 +1,280 @@
+html {
+    font-family: "Roboto", Helvetica, sans-serif;
+  }
+  
+  :root {
+    --height-header: 4rem;
+    --width-header: 10rem;
+    --t1-size: 2.7rem;
+    --t2-size: 2.3rem;
+    --t3-size: 2rem;
+    --t4-size: 1.5rem;
+  }
+  * {
+    margin: 0;
+  }
+  @font-face {
+    font-family: chonburi;
+    src: url(../font/Chonburi-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: coiny;
+    src: url(../font/Coiny-Regular.ttf);
+  }
+  .flex {
+    display: flex;
+  }
+      /* HEADER */
+header {
+    width: 100%;
+    height: var(--height-header);
+    background-color: #285430 ;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+  }
+  
+      /* NÚT MENU */
+  .menu-button {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    /* border: 1px solid #fff; */
+    border-radius: 5px;
+  }
+  .menu-button ion-icon{
+    width: 100%;
+    height: 100%;
+  }
+  
+      /* LOGO */
+  .main-logo {
+    position: absolute;
+    left: 10%;
+  }
+  .main-logo img {
+    width: var(--width-header);
+    height: var(--height-header);
+  }
+  
+      /* ĐIỀU HƯỚNG */
+  .menu {
+    /* font-weight: bolder; */
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);  
+  }
+  ul.menu > li {
+    width: 25%;
+    position: relative;
+    list-style-type: none;
+    /* width: 10rem; */
+    line-height: var(--height-header);
+    text-align: center;
+  }
+  .menu a {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    top: 50%;
+    padding: 0 26px;
+  }
+  .menu > li:hover > a{
+    background-color:  #307c31;
+  
+  }
+  .list{
+      line-height: 3.5rem;
+      background-color: rgba(143, 234, 134, 0.877);
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: none;
+  }
+  .list a{
+      color: #264f2f;
+  }
+  ul.menu >li:hover .list{
+      display: block;
+  }
+  .list li:hover{
+    background-color: rgb(98, 185, 90);
+  }
+  /* THANH TIM KIEM */
+  .search-space {
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .search-form {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+    .search-input {
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s;
+    }
+    .search-input:focus {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .search-button {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }    
+  
+    /* .search-button:before {
+      content: "\f002";
+    } */
+  
+    .fa-magnifying-glass:before {
+      content:  "\f002";
+    }
+  
+    .search-button:hover {
+      background-color: #777;
+    }
+    .maps iframe{
+        position: absolute;
+        top: 4rem;
+        width: 100%;
+        height: 100%;
+    }
+    .advise { /*TƯ VAN*/
+        color: #fff;
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        top: 4rem;
+        padding: 2.5rem;
+        background-color: rgba(25, 30, 25,0.8);
+        box-sizing: border-box;
+        transition: background-color 0.2s ;
+      }
+      .advise:hover{
+        background-color: rgba(25, 30, 25,0.9);
+      }
+      .advise h4{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      /* .inf-item{
+        margin-bottom: 0.3rem;
+        letter-spacing: 0.8px;
+      }
+      span{
+        margin-right: 0.3rem;
+      } */
+      .inf{
+        display: flex;
+      }
+      .inf .title{
+        width: 35%;
+      }
+      .inf .add{
+        line-height: 1.5rem;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+      }
+      .inf .add:last-child{
+        height: 2rem;
+      }
+      .advise .title{
+        margin-left: 2px;
+        font-size: 1rem;
+      }
+      .box{
+        margin: 0.8rem 0;
+        box-sizing: border-box;
+      }
+      .input{
+        color: #d1c5c5;
+        font-size: 1rem;
+        background: #fff0;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px 5px;
+        outline: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s;
+        margin-top: 1.5%;
+      }
+      .input:focus{
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+      #name-input{
+        width: 100%;
+      }
+      .contact{
+        display: flex;
+      }
+      .contact .input{
+        width: 90%;
+      }
+      .email{
+        width: 65%;
+      }
+      .phone{
+        width: 35%;
+      }
+      textarea{
+        width: 100%;
+        height: 10rem;
+      }
+      .send-button{
+        width: 100%;
+        background: #00905d;
+        border-radius: 5px;
+        padding: 15px;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        transition: background-color 0.1s;
+      }
+      .send-button:hover{
+        background-color: #136447;
+      }
+      .media{
+        margin: 0.5rem;
+      }
+      .media-item{
+        margin: 0.5rem;
+      }
+      .media-item img{
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+      }
+    

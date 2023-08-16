@@ -5,37 +5,43 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="nông sản, quản lí nguồn gốc nông sản">
         <link rel="shortcut icon" href="#">
+        <script src="https://kit.fontawesome.com/34b4244ac8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/index.css">
-        <script src="assets/js/index.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     </head>
 
     <body>
        <header class="flex">
             <div class="menu-button">
-               <ion-icon name="menu-outline"></ion-icon>
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="main-logo">
                 <img src="assets/images/main-logo.png" alt="LOGO-IMG">
             </div>
             <nav>
                 <ul class="menu flex">
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Nông sản</a></li>
-                    <li><a href="#">Tin tức</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#">Nông sản</a>
+                        <ul class="list">
+                            <li><a href="#nong">Nông nghiệp</a></li>
+                            <li><a href="#lam">Lâm nghiệp</a></li>
+                            <li><a href="#thuy">Thủy sản</a></li>
+                            <li><a href="#diem">Diêm nghiệp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </nav>
             <div class="search-space">
-                <form action="/search" method="get" class="search-form">
-                    <input type="text" name="search" placeholder="Tìm kiếm" class="search-input">
-                    <button type="submit" class="search-button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                <form class="search-form" action="/search" method="get">
+                    <input class="search-input" type="text" name="search" placeholder="Tìm kiếm">
+                    <button class="search-button" type="submit">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                     </button>
-                  </form>                  
+                </form>                  
             </div>
        </header>
        <section class="intro">
@@ -46,11 +52,26 @@
        </section>
        <section class="agri">
        <div class="sep">CÁC LOẠI NÔNG SẢN</div>
-        <div class="veg box">
+        <div class="veg box" id="nong">
             <div class="veg-title">Nông nghiệp</div>
-            <div class="veg content">
+            <!-- <div class="wrapper"> -->
+                <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+                <!-- <div class="carousel">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                  <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="img" draggable="false">
+                </div>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+              </div>           -->
+            <div class="veg content flex">
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://niengiamnongnghiep.vn/cay-lua-co-nguon-goc-tu-dau.html#:~:text=B%E1%BA%AFt%20%C4%91%E1%BA%A7u%20t%E1%BB%AB%20Trung%20Qu%E1%BB%91c%20v%C3%A0%20c%C3%A1c%20khu,T%C3%A2y%20Ban%20Nha%20%C4%91%E1%BA%BFn%20Trung%20v%C3%A0%20Nam%20M%E1%BB%B9.">
                             <div class="box-image">
                                 <img src="assets/images/nông nghiệp/piece-golden-rice-rice-waiting-be-harvested.jpg" alt="Lúa">
                             </div>
@@ -58,15 +79,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
-                            <div class="box-image">
-                                <img src="assets/images/nông nghiệp/piece-golden-rice-rice-waiting-be-harvested.jpg" alt="Lúa">
-                            </div>
-                            <div class="box-content">Lúa gạo</div>                           
-                        </a>
-                </div>
-                <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/L%C3%BAa_m%C3%AC">
                             <div class="box-image">
                                 <img src="assets/images/nông nghiệp/ears-wheat-close-up-field-concept-farming-nature.jpg" alt="Lúa mì">
                             </div>
@@ -74,7 +87,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/Ng%C3%B4#:~:text=C%C3%A2y%20ng%C3%B4%20%C4%91%C6%B0%E1%BB%A3c%20du%20nh%E1%BA%ADp%20v%C3%A0o%20Vi%E1%BB%87t%20Nam,v%C3%A0%20c%C3%A1c%20v%C3%B9ng%20ph%E1%BB%A5%20c%E1%BA%ADn%29.%20%5Bc%E1%BA%A7n%20d%E1%BA%ABn%20ngu%E1%BB%93n%5D">
                             <div class="box-image">
                                 <img src="assets/images/nông nghiệp/top-view-pot-full-corn-seeds-corns-white-surface.jpg" alt="Ngô">
                             </div>
@@ -82,7 +95,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://olongha.com/nguon-goc-cua-tra/">
                             <div class="box-image">
                                 <img src="assets/images/nông nghiệp/green-tea-bud-leaves-green-tea-plantations-morning.jpg" alt="Trà">
                             </div>
@@ -93,11 +106,11 @@
                 <button class="scroll-button right">→</button>    
             </div> 
         </div>
-        <div class="veg box">
-            <div class="veg-title">Lâm nghiệp</div>
-            <div class="veg content">
+        <div class="veg box" id="lam">
+            <div class="veg-title" >Lâm nghiệp</div>
+            <div class="veg content flex">
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://khbvptr.vn/cay-tre/">
                             <div class="box-image">
                                 <img src="assets/images/lâm nghiệp/green-bamboo-forest-daylight.jpg" alt="Tre">
                             </div>
@@ -105,7 +118,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/G%E1%BB%97">
                             <div class="box-image">
                                 <img src="assets/images/lâm nghiệp/stack-lot-chopped-firewood-ready-cold-winter.jpg" alt="Gỗ">
                             </div>
@@ -114,11 +127,11 @@
                 </div>
             </div>  
         </div>
-        <div class="veg box">
+        <div class="veg box" id="thuy">
             <div class="veg-title">Thủy sản</div>
-            <div class="veg content">
+            <div class="veg content flex">
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/Li%C3%AAn_b%E1%BB%99_C%C3%A1_%C4%91u%E1%BB%91i">
                             <div class="box-image">
                                 <img src="assets/images/thủy sản/cá đuối.jpg" alt="Cá đuối">
                             </div>
@@ -126,7 +139,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/H%C3%A0u">
                             <div class="box-image">
                                 <img src="assets/images/thủy sản/fresh-oyster.jpg" alt="Hàu">
                             </div>
@@ -134,7 +147,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://baokhuyennong.com/ca-com/">
                             <div class="box-image">
                                 <img src="assets/images/thủy sản/mackerel-market.jpg" alt="Cá cơm">
                             </div>
@@ -142,7 +155,7 @@
                         </a>
                 </div>
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://vi.wikipedia.org/wiki/C%C3%A1_m%C3%A8">
                             <div class="box-image">
                                 <img src="assets/images/thủy sản/top-view-delicious-seafood-arrangement.jpg" alt="Cá mè">
                             </div>
@@ -151,11 +164,11 @@
                 </div>
             </div>  
         </div>
-        <div class="veg box">
+        <div class="veg box" id="diem">
             <div class="veg-title">Diêm nghiệp</div>
-            <div class="veg content">
+            <div class="veg content flex">
                 <div class="col">
-                        <a href="#">
+                        <a target="_blank" href="https://maybomhoachat.vn/blog/muoi-la-gi-nguon-goc-va-ung-dung-cua-muoi">
                             <div class="box-image">
                                 <img src="assets/images/diêm nghiệp/salt-salt-farm-ready-harvest-thailand.jpg" alt="Muối">
                             </div>
@@ -166,7 +179,7 @@
         </div>
        </section>
        <section class="news box">
-            <div class="news-title">TIN TỨC</div>
+            <div class="sep">TIN TỨC</div>
             <div class="news content">
                 <div class="post-item">
                         <a target="_blank" href="https://startup.vnexpress.net/tin-tuc/y-tuong-moi/ung-dung-blockchain-de-minh-bach-thong-tin-cho-nong-san-viet-3824716.html">
@@ -233,27 +246,18 @@
                 </a> -->
             </div>
        </section>
-    </body>
-
-    <footer>
+       <footer>
         <div class="inf">
             <h4>Kết nối với T&T MANAGEMENT</h4>
             <div class="line-footer"></div>
             <div class="inf-item"><span>Địa chỉ: </span>283 Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</div>
             <div class="inf-item"><span>Email: </span>tatmanagement@gmail.com</div>
             <div class="inf-item"><span>Điện thoại: </span>0333747666</div>
-            <!-- <figure class="inf">
-                <img src="#" alt="icon">
-                <figcaption>acsac</figcaption>
-            </figure>
-            <figure class="inf">
-                <img src="#" alt="icon">
-                <figcaption>acsac</figcaption>
-            </figure>
-            <figure class="inf">
-                <img src="#" alt="icon">
-                <figcaption>acsac</figcaption>
-            </figure> -->
+            <div class="media">
+                <a target="_blank" class="media-item" href="https://www.instagram.com/tringuyen_2808/"><img src="assets/images/Instagram.jpg" alt="IG"></a>
+                <a target="_blank" class="media-item" href="https://www.youtube.com/@KENHVTC16"><img src="assets/images/youtube.png" alt="YTB"></a>
+                <a target="_blank" class="media-item" href="https://www.facebook.com/nmt28082004/"><img src="assets/images/Facebook.jpg" alt="FB"></a>
+            </div>
         </div>
         <div class="introduce">
             <div class="intro-img"><img src="assets/images/main-logo.png " alt="logo"></div>
@@ -288,6 +292,8 @@
             <i class="fa-solid fa-angle-up"></i>
        </div>
     </footer>
+    </body>
+    <script src="assets/js/index.js"></script>
    
 
 

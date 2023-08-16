@@ -1,0 +1,381 @@
+html {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+:root {
+  --height-header: 4rem;
+  --width-header: 10rem;
+  --t1-size: 2.7rem;
+  --t2-size: 2.3rem;
+  --t3-size: 2rem;
+  --t4-size: 1.5rem;
+  --search-size: 2.5rem;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: chonburi;
+  src: url(../font/Chonburi-Regular.ttf);
+}
+
+@font-face {
+  font-family: coiny;
+  src: url(../font/Coiny-Regular.ttf);
+}
+.flex {
+  display: flex;
+}
+    /* HEADER */
+    header {
+      width: 100%;
+      height: var(--height-header);
+      background-color: #285430 ;
+      z-index: 1;
+      position: fixed;
+      top: 0;
+    }
+    
+        /* NÚT MENU */
+    .menu-button {
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      left: 2%;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      /* border: 1px solid #fff; */
+      border-radius: 5px;
+    }
+    .menu-button ion-icon{
+      width: 100%;
+      height: 100%;
+    }
+    
+        /* LOGO */
+    .main-logo {
+      position: absolute;
+      left: 10%;
+    }
+    .main-logo img {
+      width: var(--width-header);
+      height: var(--height-header);
+    }
+    
+        /* ĐIỀU HƯỚNG */
+    .menu {
+      /* font-weight: bolder; */
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translateY(-50%) translateX(50%);  
+    }
+    ul.menu > li {
+      width: 25%;
+      position: relative;
+      list-style-type: none;
+      /* width: 10rem; */
+      line-height: var(--height-header);
+      text-align: center;
+    }
+    .menu a {
+      font-size: 1.4rem;
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      /* width: 100%;
+      height: 100%; */
+      top: 50%;
+      padding: 0 26px;
+    }
+    .menu > li:hover > a{
+      background-color:  #307c31;
+    
+    }
+    .list{
+        line-height: 3.5rem;
+        background-color: rgba(143, 234, 134, 0.877);
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .list a{
+        color: #264f2f;
+    }
+    ul.menu >li:hover .list{
+        display: block;
+    }
+    .list li:hover{
+      background-color: rgb(98, 185, 90);
+    }
+    /* THANH TIM KIEM */
+    .search-space {
+      padding: 0.5rem;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .search-form {
+      border: none;
+      border-radius: 15px;
+      position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: var(--search-size);
+        height: var(--search-size);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      .search-input{
+        width: 100%;
+        height: 100%;
+        padding: 10px 80px 10px 10px;
+        outline: none;
+        font-size: 0.8rem;
+      }
+      .search-button{
+        width: var(--search-size);
+        height: var(--search-size);
+        font-size: 20px;
+        background-color: rgb(83, 106, 83);
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .search-form:hover{
+        width: 200px;
+      }    
+/* TIN TỨC */
+.allnews {
+  padding-top: 7rem;
+  background-color: #f0f2f5;
+  padding-bottom: 2em;
+}
+
+.newsleft {
+  width: 78%;
+}
+
+.newsleft ul {
+  padding: 0;
+}
+
+.newsleft li {
+  margin-bottom: 0.7em;
+  padding-right: 40px;
+}
+
+.newsleft li a {
+  text-decoration: none;
+  color: #3e3d3d;
+}
+
+.newsleft li a p {
+  padding-top: 0.5em;
+  font-size: 14px;
+}
+
+.image {
+  margin-left: 1.5em;
+}
+
+.image img {
+  width: 236px;
+  height: 132px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.content {
+  margin-left: 1.2em;
+  box-sizing: border-box;
+}
+
+.newsright {
+  width: 22%;
+}
+
+.post-box {
+  /* box-shadow: 2px 2px 2px #ababab; */
+  border-radius: 5px;
+  /* border: 1px solid #5F8D4E; */
+  background-color: white ;
+}
+
+.recent-post-right {
+  padding: 10px 10px;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  color: #3CCF4E;
+  margin-top: -1.5em;
+}
+
+.newsright > ul > li {
+  list-style-type: none;
+  border-bottom: 1px solid #B6E2A1 ;
+}
+
+.right-content {
+  text-decoration: none;
+  color: #484848;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5em;
+}
+
+.newsright img {
+  object-fit: cover;
+  max-width: 100%;
+  margin-right: 0.7em;
+  width: 35px;
+  height: 35px;
+}
+
+
+
+/* FOOTER */
+footer {
+  position: relative;
+  /* top: 2rem; */
+  display:flex;
+  background-color: rgba(7, 107, 57,1);
+  padding: 100px 0 10px 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.inf{
+  width: 30%;
+}
+footer h4{
+  font-size: 20px;
+  font-weight: 100px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase ;
+}
+.line-footer{
+  width: 50px;
+  height: 3px;
+  background-color: #7ce380;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.inf-item span{
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+  line-height: 35px;
+}
+/* figure.inf {
+  display: flex;
+} */
+.introduce{
+  padding: 1rem;
+  width: 35%;
+  transform: translateY(-20%);
+}
+.intro-img img{
+  width: 50%;
+  margin-left: 2%;
+}
+.intro-content p{
+  margin-top: 15px;
+  letter-spacing: 0.8px;
+}
+.advise {
+  width: 35%;
+  padding: 1.5%;
+  background-color: rgba(25, 30, 25,0.5);
+  box-sizing: border-box;
+  transform: translateY(-20%);
+}
+.advise h4{
+  text-align: center;
+}
+.advise .title{
+  margin-left: 2px;
+  font-size: 1rem;
+}
+.box{
+  margin: 0.8rem 0;
+  box-sizing: border-box;
+}
+.input{
+  color: #d1c5c5;
+  font-size: 1rem;
+  background: #fff0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 8px 5px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  margin-top: 1.5%;
+  box-sizing: border-box;
+}
+.input:focus{
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+#name-input{
+  width: 100%;
+}
+.contact{
+  display: flex;
+}
+.contact .input{
+  width: 80%;
+}
+.email{
+  width: 65%;
+}
+.phone{
+  width: 35%;
+}
+textarea{
+  width: 100%;
+}
+.send-button{
+  width: 100%;
+  background: #00905d;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  transition: background-color 0.1s;
+}
+.send-button:hover{
+  background-color: #136447;
+}
+
+
+.backtop {
+  width: 50px;
+  height: 50px;
+  background: #609966;
+  color: white;
+  border-radius: 50%;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  justify-content: center;
+  font-style: normal;
+}

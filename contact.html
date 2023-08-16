@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LIÊN HỆ</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="liên hệ, nông sản, quản lí nguồn gốc nông sản">
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <script src="assets/js/index.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="flex">
+            <div class="menu-button">
+               <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="main-logo">
+                <img src="assets/images/main-logo.png" alt="LOGO-IMG">
+            </div>
+            <nav>
+                <ul class="menu flex">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li>
+                        <a href="#">Nông sản</a>
+                        <ul class="list">
+                            <li><a href="#">Nông nghiệp</a></li>
+                            <li><a href="#">Lâm nghiệp</a></li>
+                            <li><a href="#">Thủy sản</a></li>
+                            <li><a href="#">Diêm nghiệp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="search-space">
+                <form action="/search" method="get" class="search-form">
+                    <input type="text" name="search" placeholder="Tìm kiếm" class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </form>                  
+            </div>
+       </header>
+        <section class="maps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.617430478805!2d106.67563137481892!3d10.840561058007916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528536c669823%3A0x3980114bb3680fc7!2zMjgzIMSQLiBMw6ogxJDhu6ljIFRo4buNLCBQaMaw4budbmcgMTcsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1692009051169!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="advise">
+            <h4>T&T MANAGEMENT</h4>
+            <div class="inf">
+                <div class="title">
+                    <div class="add">Địa chỉ</div>
+                    <div class="add">Email</div>
+                    <div class="add">Điện thoại</div>
+                </div>
+                <div class="content">
+                    <div class="add">283 Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</div>
+                    <div class="add">tatmanagement@gmail.com</div>
+                    <div class="add">0333747666</div>
+                </div>
+                <!-- <div class="inf-item"><span>Địa chỉ: </span>283 Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam</div>
+                <div class="inf-item"><span>Email: </span>tatmanagement@gmail.com</div>
+                <div class="inf-item"><span>Điện thoại: </span>0333747666</div> -->
+            </div>    
+            <div class="name box">
+                <div class="title">Họ và Tên</div>
+                <input type="text" class="input" id="name-input">
+            </div>
+            <div class="contact box">
+                <div class="email">
+                    <div class="title">Email</div>
+                    <input type="email" class="input" id="email-input">
+                </div>
+                <div class="phone">
+                    <div class="title">Điện thoại</div>
+                    <input type="tel" id="phone-input" class="input">
+                </div>
+            </div>
+            <div class="idea box">
+                <div class="title">Nội dung</div>
+                <textarea class="input" id="idea-input"></textarea>
+            </div>
+            <button class="send-button">GỬI ĐI</button>
+            <div class="media">
+                <a target="_blank" class="media-item" href="https://www.facebook.com/nmt28082004/"><img src="assets/images/Facebook.jpg" alt="FB"></a>
+                <a target="_blank" class="media-item" href="https://www.instagram.com/tringuyen_2808/"><img src="assets/images/Instagram.jpg" alt="IG"></a>
+                <a target="_blank" class="media-item" href="https://www.youtube.com/@KENHVTC16"><img src="assets/images/youtube.png" alt="YTB"></a>
+            </div>
+        </section>
+    </body>
+</html>
