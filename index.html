@@ -4,18 +4,20 @@
         <title>QUẢN LÍ NGUỒN GỐC NÔNG SẢN</title>
         <meta charset="UTF-8">
         <meta name="keywords" content="nông sản, quản lí nguồn gốc nông sản">
-        <link rel="shortcut icon" href="#">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/images/main-logo.png">
         <script src="https://kit.fontawesome.com/34b4244ac8.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="assets/css/index.css">
-        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
         <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     </head>
 
     <body>
        <header class="flex">
-            <div class="menu-button">
-                <i class="fa-solid fa-bars"></i>
-            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="menu-button">
+                <i class="fa-solid fa-bars" id="open"></i>
+                <i class="fa-solid fa-xmark" id="close"></i>
+            </label>
             <div class="main-logo">
                 <img src="assets/images/main-logo.png" alt="LOGO-IMG">
             </div>
@@ -36,7 +38,7 @@
                 </ul>
             </nav>
             <div class="search-space">
-                <form class="search-form" action="/search" method="get">
+                <form class="search-form">
                     <input class="search-input" type="text" name="search" placeholder="Tìm kiếm">
                     <button class="search-button" type="submit">
                         <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
@@ -46,8 +48,8 @@
        </header>
        <section class="intro">
             <div class="title">
-                <div>QUẢN LÍ NGUỒN GỐC NÔNG SẢN</div>
-                <div class="el-title">MANAGEMENT OF AGRICULTURAL ORIGIN</div>    
+                <div class="vn-title">QUẢN LÍ NGUỒN GỐC NÔNG SẢN</div>
+                <div class="el-title">MANAGEMENT OF AGRICULTURAL ORIGIN</div>
             </div>
        </section>
        <section class="agri">

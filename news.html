@@ -5,19 +5,19 @@
     <meta name="keywords" content="tin tức, tin tức nông sản, tin tức mới nhất">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="assets/images/main-logo.png">
     <script src="https://kit.fontawesome.com/34b4244ac8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/news.css">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
-    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <title>TIN TỨC</title>
 </head>
 
 <body>
     <header class="flex">
-        <div class="menu-button">
-           <ion-icon name="menu-outline"></ion-icon>
-        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-button">
+            <i class="fa-solid fa-bars" id="open"></i>
+            <i class="fa-solid fa-xmark" id="close"></i>
+        </label>
         <div class="main-logo">
             <img src="assets/images/main-logo.png" alt="LOGO-IMG">
         </div>
@@ -27,10 +27,10 @@
                 <li>
                     <a href="#">Nông sản</a>
                     <ul class="list">
-                        <li><a href="#">Nông nghiệp</a></li>
-                        <li><a href="#">Lâm nghiệp</a></li>
-                        <li><a href="#">Thủy sản</a></li>
-                        <li><a href="#">Diêm nghiệp</a></li>
+                        <li><a href="#nong">Nông nghiệp</a></li>
+                        <li><a href="#lam">Lâm nghiệp</a></li>
+                        <li><a href="#thuy">Thủy sản</a></li>
+                        <li><a href="#diem">Diêm nghiệp</a></li>
                     </ul>
                 </li>
                 <li><a href="news.html">Tin tức</a></li>
@@ -38,7 +38,7 @@
             </ul>
         </nav>
         <div class="search-space">
-            <form class="search-form" action="/search" method="get">
+            <form class="search-form">
                 <input class="search-input" type="text" name="search" placeholder="Tìm kiếm">
                 <button class="search-button" type="submit">
                     <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
@@ -46,11 +46,23 @@
             </form>                  
         </div>
    </header>
-
-    <div class="allnews flex">
+<div class="allnews flex">
         <div class="newsleft">
+            <h1>TIN NỔI BẬT</h1>
             <ul> 
                 <li class="flex">
+                    <a target="_blank" href="https://startup.vnexpress.net/tin-tuc/y-tuong-moi/ung-dung-blockchain-de-minh-bach-thong-tin-cho-nong-san-viet-3824716.html">
+                        <div class="image">
+                            <img src="https://i1-startup.vnecdn.net/2018/10/22/2-Image-4-9383-1540204346.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=FVb9NSR6PBk82IgL7VbUOg" alt="tin tuc" />
+                        </div>
+                        <div class="content">
+                            <h3>Ứng dụng Blockchain để minh bạch thông tin cho nông sản Việt</h3>
+                            <p>Giải pháp Blockchain trong truy xuất nguồn gốc được cho là bước tiến để nông sản trong nước tham gia mạnh hơn vào chuỗi sản xuất, cung ứng toàn cầu...</p>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- <li class="flex">
                     <div class="image">
                         <a target="_blank" href="https://startup.vnexpress.net/tin-tuc/y-tuong-moi/ung-dung-blockchain-de-minh-bach-thong-tin-cho-nong-san-viet-3824716.html">
                             <img src="https://i1-startup.vnecdn.net/2018/10/22/2-Image-4-9383-1540204346.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=FVb9NSR6PBk82IgL7VbUOg" alt="tin tuc" />
@@ -75,22 +87,52 @@
                             <p>Quét mã nguồn gốc nông sản trong một siêu thị lớn, chuyên gia mã vạch bất ngờ thấy thông tin ngày cách ly phân bón và thuốc trừ sâu giống nhau...</p>
                         </a>
                     </div>
-                </li>
+                </li> -->
                 <li class="flex">
-                    <div class="image">
-                        <a target="_blank" href="https://namdinh.gov.vn/portal/Pages/2020-11-26/Truy-xuat-nguon-goc-nong-san-Doanh-nghiep-nguoi-tiiiguwu.aspx">
-                            <img src="http://media.vietq.vn/files/HanHien/2020/11/23/truy-xuat-nguon-goc-nong-san-doanh-nghiep-nguoi-tieu-dung-cung-huong-loi.jpg" alt="tin tuc"/>
-                        </a>                        
-                    </div>
-                    <div class="content">
-                        <a target="_blank" href="https://namdinh.gov.vn/portal/Pages/2020-11-26/Truy-xuat-nguon-goc-nong-san-Doanh-nghiep-nguoi-tiiiguwu.aspx">
-                            <h3>Truy xuất nguồn gốc nông sản: Doanh nghiệp, người tiêu dùng cùng hưởng lợi</h3>
-                            <p>Việc thực hiện phát triển hệ thống truy xuất nguồn gốc nông sản thời gian qua đã giúp doanh nghiệp và người tiêu dùng cùng ngăn chặn thực phẩm không rõ nguồn gốc, xuất xứ bán trên thị trường...</p>
-                        </a>
-                    </div>
+                    <a target="_blank" href="https://vnexpress.net/chuyen-gia-phat-hien-dieu-la-ve-nguon-goc-nong-san-trong-sieu-thi-4381487.html">
+                        <div class="image">
+                            <img src="https://i1-vnexpress.vnecdn.net/2021/11/04/anh-doan-9168-1636021981-16360-1144-7686-1636033326.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=7QsT4sOTQQjKysGF6FHhnw" alt="tin tuc"/>
+                        </div>
+                        <div class="content">
+                            <h3>Chuyên gia phát hiện 'điều lạ' về nguồn gốc nông sản trong siêu thị</h3>                        
+                            <p>Quét mã nguồn gốc nông sản trong một siêu thị lớn, chuyên gia mã vạch bất ngờ thấy thông tin ngày cách ly phân bón và thuốc trừ sâu giống nhau...</p>
+                        </div>
                     </a>
                 </li>
                 <li class="flex">
+                    <a target="_blank" href="https://namdinh.gov.vn/portal/Pages/2020-11-26/Truy-xuat-nguon-goc-nong-san-Doanh-nghiep-nguoi-tiiiguwu.aspx">
+                        <div class="image">
+                            <img src="http://media.vietq.vn/files/HanHien/2020/11/23/truy-xuat-nguon-goc-nong-san-doanh-nghiep-nguoi-tieu-dung-cung-huong-loi.jpg" alt="tin tuc"/>     
+                        </div>
+                        <div class="content">
+                            <h3>Truy xuất nguồn gốc nông sản: Doanh nghiệp, người tiêu dùng cùng hưởng lợi</h3>
+                            <p>Việc thực hiện phát triển hệ thống truy xuất nguồn gốc nông sản thời gian qua đã giúp doanh nghiệp và người tiêu dùng cùng ngăn chặn thực phẩm không rõ nguồn gốc, xuất xứ bán trên thị trường...</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a target="_blank" href="https://tuoitre.vn/giai-phap-thuc-day-so-hoa-truy-xuat-nguon-goc-nong-san-20230228134150083.htm">
+                        <div class="image">
+                            <img src="https://cdn.tuoitre.vn/471584752817336320/2023/2/28/base64-16775743528081588600747.png"/>
+                        </div>
+                        <div class="content">
+                            <h3>Giải pháp thúc đẩy số hóa truy xuất nguồn gốc nông sản</h3>
+                            <p>Đẩy mạnh chuyển đổi số trong truy xuất nguồn gốc nông sản là việc làm cấp bách...</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="flex">
+                    <a target="_blank" href="https://startup.vnexpress.net/tin-tuc/y-tuong-moi/ung-dung-blockchain-de-minh-bach-thong-tin-cho-nong-san-viet-3824716.html">
+                        <div class="image">
+                            <img src="https://i.vnbusiness.vn/2023/02/11/-9482-1676079380_1200x0.jpg" alt="tin tuc" />
+                        </div>
+                        <div class="content">
+                            <h3>Gỡ nút thắt trong truy xuất nguồn gốc nông sản của HTX</h3>
+                            <p>Muốn truy xuất nguồn gốc nông sản của người dân, HTX, việc quét mã QR được coi là phương pháp phổ biến hiện nay. Tuy nhiên...</p>
+                        </div>
+                    </a>
+                </li>
+                <!-- <li class="flex">
                     <div class="image">
                         <a target="_blank" href="https://tuoitre.vn/giai-phap-thuc-day-so-hoa-truy-xuat-nguon-goc-nong-san-20230228134150083.htm">
                             <img src="https://cdn.tuoitre.vn/471584752817336320/2023/2/28/base64-16775743528081588600747.png"/>
@@ -116,7 +158,7 @@
                             <p>Muốn truy xuất nguồn gốc nông sản của người dân, HTX, việc quét mã QR được coi là phương pháp phổ biến hiện nay. Tuy nhiên...</p>
                         </a>
                     </div>                      
-                </li>
+                </li> -->
             </ul>
         </div>
 
