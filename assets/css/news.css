@@ -424,12 +424,21 @@ textarea{
   background: #609966;
   color: white;
   border-radius: 50%;
-  align-items: center;
   position: fixed;
   bottom: 30px;
   right: 20px;
-  justify-content: center;
+  display: none;
+  cursor: pointer;
   font-style: normal;
+  text-align: center;
+  outline: 2px solid white;
+}
+
+.backtop:hover {
+    background-color: #16db65;
+}
+.fa-angle-up {
+  line-height: 50px;
 }
 
 @media screen and (max-width: 480px) {
