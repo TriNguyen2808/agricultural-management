@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/images/main-logo.png">
     <script src="https://kit.fontawesome.com/34b4244ac8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/news.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <title>TIN TỨC</title>
 </head>
 
@@ -244,6 +245,21 @@
         <i class="fa-solid fa-angle-up"></i>
    </div>
 </footer>
-
-
+<!-- JS -->
+<!-- BACK-TO-TOP -->
+<script src="assets/js/index.js">
+    var showBackTop = 300;
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() >= showBackTop){
+                $('.backtop').fadeIn();
+            } else {
+                $('.backtop').fadeOut();
+            }
+        });
+        $('.backtop').click(function(){
+            $('html, body').animate({scrollTop: 0 }, 800);
+        });
+    });
+</script>
 </html>
