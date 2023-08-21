@@ -299,12 +299,7 @@ ul.menu >li:hover .list{
 
   .vegitems:nth-child(2) {
     transform: translateX(100%);
-    padding-left: 46px;
-
-  }
-  .vegitems:nth-child(3) {
-    transform: translateX(200%);
-    padding-left: 52px;
+    padding-left: 26px;
   }
 
   .vegitems {
@@ -375,12 +370,7 @@ ul.menu >li:hover .list{
 
   .vegitemstwo:nth-child(2) {
     transform: translateX(100%);
-    padding-left: 46px;
-
-  }
-  .vegitemstwo:nth-child(3) {
-    transform: translateX(200%);
-    padding-left: 52px;
+    padding-left: 26px;
   }
 
   .vegitemstwo {
@@ -450,12 +440,7 @@ ul.menu >li:hover .list{
 
   .vegitemsthree:nth-child(2) {
     transform: translateX(100%);
-    padding-left: 46px;
-
-  }
-  .vegitemsthree:nth-child(3) {
-    transform: translateX(200%);
-    padding-left: 52px;
+    padding-left: 26px;
   }
 
   .vegitemsthree {
@@ -507,6 +492,7 @@ ul.menu >li:hover .list{
   .veg-content {
     margin-top: 15px;
     position: relative;
+    margin-left: 23px;
   }
 
   .col {
@@ -764,13 +750,24 @@ ul.menu >li:hover .list{
     background: #609966;
     color: white;
     border-radius: 50%;
-    align-items: center;
     position: fixed;
     bottom: 30px;
     right: 20px;
-    justify-content: center;
+    display: none;
+    cursor: pointer;
     font-style: normal;
+    text-align: center;
+    outline: 2px solid white;
   }
+
+  .backtop:hover {
+      background-color: #16db65;
+  }
+  .fa-angle-up {
+    line-height: 50px;
+  }
+
+
   /* DIEN THOAI */
   @media screen and (max-width: 480px) {
     /* header */
