@@ -274,33 +274,241 @@ ul.menu >li:hover .list{
     color:#fff;
     padding: 0.5rem;
     padding-left: 1.5rem;
-    
   }
 
-  .veg.content {
+  /* Nông Sản */
+  .vegContainer {
+    overflow: hidden;
+  }
+
+  .vegSlider {
+    position: relative;
+    height: 340px;
+    transition: all 0.5s ease;
+  }
+
+  .vegitems > .col {
+    width: 100%;
+    padding: 0 26px;
+    margin: 0 10px;
+  }
+
+  .vegitems:first-child {
+    margin-left: 2%;
+  }
+
+  .vegitems:nth-child(2) {
+    transform: translateX(100%);
+    padding-left: 46px;
+
+  }
+  .vegitems:nth-child(3) {
+    transform: translateX(200%);
+    padding-left: 52px;
+  }
+
+  .vegitems {
     margin-top: 15px;
-    display: flex;
+    position: absolute;
+    scroll-behavior: smooth;
+  }
+
+  .vegitems img {
+    width: 100%;
+  }
+
+  .vegitems a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+
+  .btn {
+    position: absolute;
+    top: 300px;
+    justify-content:space-between;
+    width: 100%;
+  }
+
+  .btn i {
+    color: white;
+    outline: 1px solid white;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: #4E9F3D;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .btn #left {
+    transform: translateX(12px);
+  }
+  .btn #right {
+    transform: translateX(-11px);
+  }
+
+  .btn i:hover {
+    opacity: 1;
+  }
+
+    /* Lâm nghiệp */
+  .vegContainertwo {
+    overflow: hidden;
+  }
+
+  .vegSlidertwo {
+    position: relative;
+    height: 340px;
+    transition: all 0.5s ease;
+  }
+
+  .vegitemstwo > .col {
+    width: 100%;
+    padding: 0 26px;
+    margin: 0 10px;
+  }
+
+  .vegitemstwo:first-child {
+    margin-left: 2%;
+  }
+
+  .vegitemstwo:nth-child(2) {
+    transform: translateX(100%);
+    padding-left: 46px;
+
+  }
+  .vegitemstwo:nth-child(3) {
+    transform: translateX(200%);
+    padding-left: 52px;
+  }
+
+  .vegitemstwo {
+    margin-top: 15px;
+    position: absolute;
+    scroll-behavior: smooth;
+  }
+
+  .vegitemstwo img {
+    width: 100%;
+  }
+
+  .vegitemstwo a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .btntwo {
+    position: absolute;
+    top: 750px;
+    justify-content:space-between;
+    width: 100%;
+  }
+  .btntwo i {
+    color: white;
+    outline: 1px solid white;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: #4E9F3D;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .btntwo #lefttwo {
+    transform: translateX(12px);
+  }
+  .btntwo #righttwo {
+    transform: translateX(-11px);
+  }
+  .btntwo i:hover {
+    opacity: 1;
+  }
+
+
+  /* Thủy Sản */
+  .vegContainerthree {
+    overflow: hidden;
+  }
+
+  .vegSliderthree {
+    position: relative;
+    height: 340px;
+    transition: all 0.5s ease;
+  }
+
+  .vegitemsthree > .col {
+    width: 100%;
+    padding: 0 26px;
+    margin: 0 10px;
+  }
+
+  .vegitemsthree:first-child {
+    margin-left: 2%;
+  }
+
+  .vegitemsthree:nth-child(2) {
+    transform: translateX(100%);
+    padding-left: 46px;
+
+  }
+  .vegitemsthree:nth-child(3) {
+    transform: translateX(200%);
+    padding-left: 52px;
+  }
+
+  .vegitemsthree {
+    margin-top: 15px;
+    position: absolute;
+    scroll-behavior: smooth;
+  }
+
+  .vegitemsthree img {
+    width: 100%;
+  }
+
+  .vegitemsthree a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+
+  .btnthree {
+    position: absolute;
+    top: 1200px;
+    justify-content:space-between;
+    width: 100%;
+  }
+
+  .btnthree i {
+    color: white;
+    outline: 1px solid white;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 50%;
+    background-color: #4E9F3D;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .btnthree #leftthree {
+    transform: translateX(12px);
+  }
+  .btnthree #rightthree {
+    transform: translateX(-11px);
+  }
+
+  .btnthree i:hover {
+    opacity: 1;
+  }
+
+
+  .veg-content {
+    margin-top: 15px;
     position: relative;
   }
 
-  .scroll-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0.5rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .scroll-button.left {
-    left: 0;
-  }
-  
-  .scroll-button.right {
-    right: 0;
-  }
   .col {
     box-shadow: 2px 2px 10px #0000001c ;
     border: 1px solid white;
@@ -308,8 +516,9 @@ ul.menu >li:hover .list{
     width:24%;
     margin-right: 1%;
     padding: 0 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
   .col:last-child{
     margin-right: 0.5%;
@@ -320,6 +529,7 @@ ul.menu >li:hover .list{
   .box-image {
     text-align: center;
     margin-top: 3%;
+    overflow: hidden;
   }
 
   .box-image img {
@@ -329,8 +539,8 @@ ul.menu >li:hover .list{
   }
 
   .box-image img:hover {
-    transition: filter .6s, opacity .6s, transform .6s, box-shadow .3s;
-    transform: scale(1.1);
+    transition: transform .6s;
+    transform: scale(1.2);
   }
 
   .box-content {
@@ -342,22 +552,14 @@ ul.menu >li:hover .list{
     margin-top: 0.8rem;
   }
 
-  /* .box-content p {
-    transform: translateY(10px);
-    text-align: center;
-  } */
-
-  /* .content {
-    display: flex;
-    
-    } */
+  .veg-content a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
   .content a {
     margin-top: 0.5rem;
     text-decoration: none;
   }
-  /*.content figure {
-    text-align: center;
-  } */
   
   /* TIN TỨC */
   .news.box {
@@ -629,7 +831,10 @@ ul.menu >li:hover .list{
       width: 80%;
       font-size: 1.5rem;
     }
-
+    /* nong san */
+    .veg-content .col{
+      width: 100%;
+    }
     /* bao */
     .post-image img{
       margin-left: 0.5rem;
@@ -681,3 +886,15 @@ ul.menu >li:hover .list{
       width: 80%;
     }
   } */
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    header .menu{
+      width: 70%;
+      transform: translate(60%,-50%);;
+    }
+    .main-logo{
+      left: 3%;
+    }
+    .sep{
+      width: 65%;
+    }
+  }

@@ -85,6 +85,7 @@ html {
         /* ĐIỀU HƯỚNG */
     .menu {
       /* font-weight: bolder; */
+      justify-content: center;
       width: 60%;
       height: 100%;
       position: absolute;
@@ -93,7 +94,7 @@ html {
       transform: translate(55%,-50%);  
     }
     .menu > li {
-      width: 25%;
+      width: calc(100% / 3);
       position: relative;
       list-style-type: none;
       /* width: 10rem; */
@@ -476,9 +477,6 @@ textarea{
         background-color: rgba(40,84,48,0.8);
         backdrop-filter: blur(30px);
       }
-   header .menu{
-   display: none;
- }
   
  /* bao */
  .allnews{
@@ -513,4 +511,20 @@ textarea{
  .intro-img{
    display: none;
  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  header .menu{
+    width: 70%;
+    transform: translate(60%,-50%);;
+  }
+  .main-logo{
+    left: 3%;
+  }
+  .newsleft{
+    width: 65%;
+  }
+  .newsright{
+    width: 35%;
+  }
 }
