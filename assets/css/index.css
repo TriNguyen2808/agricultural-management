@@ -294,7 +294,7 @@ ul.menu >li:hover .list{
   }
 
   .vegitems:first-child {
-    margin-left: 2%;
+    margin-left: 3%;
   }
 
   .vegitems:nth-child(2) {
@@ -337,10 +337,10 @@ ul.menu >li:hover .list{
     text-align: center;
   }
   .btn #left {
-    transform: translateX(12px);
+    transform: translateX(33px);
   }
   .btn #right {
-    transform: translateX(-11px);
+    transform: translateX(-33px);
   }
 
   .btn i:hover {
@@ -365,7 +365,7 @@ ul.menu >li:hover .list{
   }
 
   .vegitemstwo:first-child {
-    margin-left: 2%;
+    margin-left: 3%;
   }
 
   .vegitemstwo:nth-child(2) {
@@ -407,10 +407,10 @@ ul.menu >li:hover .list{
     text-align: center;
   }
   .btntwo #lefttwo {
-    transform: translateX(12px);
+    transform: translateX(33px);
   }
   .btntwo #righttwo {
-    transform: translateX(-11px);
+    transform: translateX(-33px);
   }
   .btntwo i:hover {
     opacity: 1;
@@ -435,7 +435,7 @@ ul.menu >li:hover .list{
   }
 
   .vegitemsthree:first-child {
-    margin-left: 2%;
+    margin-left: 3%;
   }
 
   .vegitemsthree:nth-child(2) {
@@ -478,10 +478,10 @@ ul.menu >li:hover .list{
     text-align: center;
   }
   .btnthree #leftthree {
-    transform: translateX(12px);
+    transform: translateX(33px);
   }
   .btnthree #rightthree {
-    transform: translateX(-11px);
+    transform: translateX(-33px);
   }
 
   .btnthree i:hover {
@@ -510,7 +510,7 @@ ul.menu >li:hover .list{
     margin-right: 0.5%;
   }
   .col:first-child{
-    margin-left: 0.5%;
+    /* margin-left: 0.5%; */
   }
   .box-image {
     text-align: center;
